@@ -3,7 +3,9 @@ $text1 ="“Ricchezze, fama, potere. Un solo uomo è riuscito ad ottenere tutto 
     Era Gold Roger, il Re dei Pirati.
     Le sue parole in punto di morte spinsero la gente a salpare”.";
 $text2 ="“Il mio tesoro? Prendetelo pure se volete, cercatelo, chissà se qualcuno lo troverà!”";
-$censored= $_GET["***"];
+$censored= $_GET["censored"];
+$text1= str_replace( $censored,"***", $text1);
+$text2= str_replace( $censored,"***", $text2);
 ?>
 
 <!DOCTYPE html>
