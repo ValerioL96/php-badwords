@@ -3,11 +3,11 @@ $text1 ="“Ricchezze, fama, potere. Un solo uomo è riuscito ad ottenere tutto 
     Era Gold Roger, il Re dei Pirati.
     Le sue parole in punto di morte spinsero la gente a salpare”.";
 $text2 ="“Il mio tesoro? Prendetelo pure se volete, cercatelo, chissà se qualcuno lo troverà!”";
-
+$censored= $_GET["***"];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,13 @@ $text2 ="“Il mio tesoro? Prendetelo pure se volete, cercatelo, chissà se qual
         lunghezza:
         <?php echo strlen($text2) ?>
         </p>
+        <h3>Parola censurata:  <?php echo $_GET["censored"] ?></h3>
+        <form action="./index.php" method="get">
+            <label for="censored">Digita parola da censurare:</label>
+            <input type="text" name="censored" id="censored">
+            <button type="submit">Censura</button>
+        </form>
+        
     </main>    
     
 </body>
