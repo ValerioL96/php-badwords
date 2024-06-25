@@ -1,5 +1,8 @@
 <?php
-$name ="Valerio";
+$text1 ="“Ricchezze, fama, potere. Un solo uomo è riuscito ad ottenere tutto ciò che si possa desiderare a questo mondo.
+    Era Gold Roger, il Re dei Pirati.
+    Le sue parole in punto di morte spinsero la gente a salpare”.";
+$text2 ="“Il mio tesoro? Prendetelo pure se volete, cercatelo, chissà se qualcuno lo troverà!”";
 
 ?>
 
@@ -13,8 +16,21 @@ $name ="Valerio";
 <body>
     <main>
         <h1>
-            Il mio nome è: <?php echo $name ?>
+            One Piece
         </h1>
+        <h2>
+            <?php echo $text1 ?>
+            lunghezza:
+            <?php echo strlen($text1) ?>
+        </h2>
+        <p>
+            Roger disse:
+        </p>
+        <p>
+        <?php echo $text2 ?>
+        lunghezza:
+        <?php echo strlen($text2) ?>
+        </p>
     </main>    
     
 </body>
