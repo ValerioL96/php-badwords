@@ -1,6 +1,5 @@
 <?php
-
-
+$name ="Valerio";
 
 ?>
 
@@ -12,6 +11,11 @@
     <title>PHP Badword</title>
 </head>
 <body>
+    <main>
+        <h1>
+            Il mio nome è: <?php echo $name ?>
+        </h1>
+    </main>    
     
 </body>
 </html>
